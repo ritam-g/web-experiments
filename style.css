@@ -26,7 +26,8 @@ main {
   grid-template-columns: 1fr;
   gap: 0.2rem;
   grid-template-areas: "first" "second" "third";
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 main .first {
   grid-area: first;
@@ -38,6 +39,7 @@ main .first {
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding: 1rem 1rem;
 }
 main .second {
   grid-area: second;
@@ -49,6 +51,7 @@ main .second {
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding: 1rem 1rem;
 }
 main .third {
   grid-area: third;
@@ -60,6 +63,7 @@ main .third {
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding: 1rem 1rem;
 }
 
 img {

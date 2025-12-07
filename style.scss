@@ -42,8 +42,8 @@ main {
     "first"
     "second"
     "third";
-  font-size: 2rem;
-
+  font-size: 1.5rem;
+  font-weight: 100;
   // Individual sections
   .first {
     grid-area: first;
@@ -53,6 +53,8 @@ main {
     font-weight: bold;
     @include flex();
     @include relativeHiden();
+    
+  padding: 1rem 1rem;
   }
 
   .second {
@@ -63,6 +65,8 @@ main {
     font-weight: bold;
     @include flex();
     @include relativeHiden();
+    
+  padding: 1rem 1rem;
 
     // Example: make middle section scrollable later if needed
     // overflow-y: auto;
@@ -76,6 +80,8 @@ main {
     font-weight: bold;
     @include flex();
     @include relativeHiden();
+    
+  padding: 1rem 1rem;
   }
 }
 img{
