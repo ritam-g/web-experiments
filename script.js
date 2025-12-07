@@ -1,28 +1,18 @@
-let box=document.querySelector(".box")
-let main=document.querySelector("main")
-let body=document.querySelector("body")
-let img=document.querySelector("img")
-main.addEventListener("mousemove",(e)=>{
-    img.style.top=e.clientY+'px'
-    img.style.left=e.clientX+'px'
-    
-    document.body.style.cursor = "none";
+let allSection = document.querySelectorAll("main section");
 
-})
-box.addEventListener("mousemove",(e)=>{
-    const rect = box.getBoundingClientRect();
-    // Mouse position inside box
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+allSection.forEach(section => {
+  let img = section.querySelector("img");
 
-    // Convert to 0→1
-    const xPercent = x / rect.width;
-    const yPercent = y / rect.height;
-    // Convert mouse position to gradient angle (0°–360°)
-    const angle = Math.floor((xPercent + yPercent) * 360);
-    body.style.setProperty("--deg",`${angle}deg`)
-    const boxBg = window.getComputedStyle(box).getPropertyValue("background");
-    main.style.background = boxBg;
-    
+  section.addEventListener("mouseenter", () => {
+    img.style.display = "block";
+    img.style.cursor="pointer"
+  });
 
-})
+  section.addEventListener("mousemove", (e) => {
+    img.style.left = `${e.clientX + 20}px`;
+  });
+
+  section.addEventListener("mouseleave", () => {
+    img.style.display = "none";
+  });
+});
