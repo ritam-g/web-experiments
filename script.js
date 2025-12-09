@@ -16,3 +16,12 @@ allSection.forEach(section => {
     img.style.display = "none";
   });
 });
+function call(a) {
+  if (a) {
+    console.log("hacker is acessing");
+    
+  } else {
+    console.log("from script call");
+    
+  }
+}
