@@ -4,10 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <div class="wallpaper">
+    </div>
+    <!-- START MENU (hidden) -->
+
+
+    <div class="taskbar">
+  
+  <!-- Left: Weather Widget -->
+  <div class="weather">
+    <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="">
+    <div>
+      <p>19°C</p>
+      <span>Mostly cloudy</span>
+    </div>
+  </div>
+
+  <!-- Center Area -->
+  <div class="center-area">
+    <div class="search-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/149/149852.png" class="search-icon">
+      <input type="text" placeholder="Search" disabled>
+    </div>
+
+    <div class="icons">
+      <img id="windowBut" src="https://img.icons8.com/color/48/windows-11.png">
+      <!-- <img src="https://cdn-icons-png.flaticon.com/512/732/732221.png"> -->
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968940.png">
+      <img src="https://img.icons8.com/color/48/google-chrome--v1.png">
+      <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png">
+      <img src="https://cdn-icons-png.flaticon.com/512/8462/8462803.png">
+    </div>
+  </div>
+
+  <!-- Right: System Tray -->
+  <div class="tray">
+    <span>ENG IN</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/159/159604.png">
+    <img src="https://cdn-icons-png.flaticon.com/512/3103/3103446.png">
+    <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png">
+
+    <div class="datetime">
+      <span>22:12</span>
+      <span>10-12-2025</span>
+    </div>
+  </div>
+
+    </div>
+    <!-- START MENU -->
+<div class="start-menu" id="startMenu">
+  <div class="start-header">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828490.png" alt="User" />
+    <div>
+      <h3>Ritam</h3>
+      <p>Signed in</p>
+    </div>
+  </div>
+
+  <div class="start-search">
+    <input type="text" placeholder="Search for apps, settings..." />
+  </div>
+
+  <div class="pinned-apps">
+    <h4>Pinned</h4>
+    <div class="apps-grid">
+      <div class="app"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png"><p>Word</p></div>
+      <div class="app"><img src="https://cdn-icons-png.flaticon.com/512/732/732226.png"><p>Excel</p></div>
+      <div class="app"><img src="https://cdn-icons-png.flaticon.com/512/732/732221.png"><p>PowerPoint</p></div>
+      <div class="app"><img src="https://cdn-icons-png.flaticon.com/512/888/888859.png"><p>Chrome</p></div>
+      <div class="app"><img src="https://cdn-icons-png.flaticon.com/512/906/906349.png"><p>VS Code</p></div>
+      <div class="app"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"><p>Settings</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- Context Menu -->
+
+
     <script src="script.js"></script>
 </body>
 </html>
