@@ -1,0 +1,39 @@
+# ======================
+# Dependencies
+# ======================
+Day-70-Task/node_modules/
+
+# ======================
+# Build output
+# ======================
+Day-70-Task/dist/
+
+# ======================
+# Vite cache
+# ======================
+Day-70-Task/.vite/
+
+# ======================
+# Environment files
+# ======================
+Day-70-Task/.env
+Day-70-Task/.env.local
+Day-70-Task/.env.*
+
+# ======================
+# Logs
+# ======================
+Day-70-Task/npm-debug.log*
+Day-70-Task/yarn-debug.log*
+Day-70-Task/yarn-error.log*
+
+# ======================
+# OS / Editor junk
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# VS Code (optional)
+# ======================
+.vscode/
