@@ -4,7 +4,7 @@ import NavRight from './NavRight'
 
 function NavBar() {
   return (
-    <div className="h-28 w-full flex items-center justify-between text-white ">
+    <div className="h-[15vh] w-full flex items-center justify-between text-white  px-4">
       <NavLeftPart />
       <NavRight />
     </div>

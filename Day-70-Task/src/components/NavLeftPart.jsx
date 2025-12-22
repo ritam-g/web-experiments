@@ -2,8 +2,10 @@ import React from 'react'
 
 function NavLeftPart() {
   return (
-    <div className="text-2xl bg-green-300 ">
-      <h1 className=" bg-green-700">DVSY</h1>
+    <div className="text-2xl    flex items-center px-10">
+      <h1 className=" px-6 py-2 text-white text-3xl">
+        DVSY
+      </h1>
     </div>
   )
 }
