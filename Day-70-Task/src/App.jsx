@@ -1,13 +1,18 @@
 import React from 'react'
-import NavBar from './components/NavBar'
-import SectionImage from './components/SectionImage'
-import SectionBelow from './components/SectionBelow'
-import Nav2 from './components/Nav2'
-import LikeSection from './components/LikeSection'
+import Card from './components/Card'
 function App() {
   return (
-    <div>
+    <div className='main overflow-auto bg-gray-700 h-screen w-full p-[5rem] px-[15rem] flex flex-col gap-[1rem]'>
       
+      <div className='flex justify-between'>
+        <Card/>
+        <Card/>
+        <Card/>
+      </div><div className='flex justify-between'>
+        <Card/>
+        <Card/>
+        <Card/>
+      </div>
     </div>
   )
 }
