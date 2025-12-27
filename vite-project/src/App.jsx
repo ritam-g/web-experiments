@@ -15,6 +15,11 @@ function App() {
       setEmail('');
     }
   };
+  function removePerson(id) {
+    let copuser=[...allData]
+    copuser.splice(id,1)
+    setAllData(copuser)
+  }
 
   return (
     <div className='main h-screen w-screen bg-gray-700 flex items-center justify-center p-8 gap-6'>
@@ -26,7 +31,9 @@ function App() {
         setEmail={setEmail} 
         handleFormSubmit={handleSubmit}
       />
-      <Right data={allData}/>
+      <Right
+        removePerson={removePerson}
+       data={allData}/>
     </div>
   );
 }
