@@ -1,41 +1,24 @@
-import React, { useState } from 'react';
-import Left from './components/Left';
-import Right from './components/Right';
+
+import { Route, Routes } from 'react-router-dom'
+import Home from './components/Home'
+import About from './components/About'
+import Navbar from './components/Navbar'
+import Dashboar from './components/Dashboar'
+import Ele from './components/Ele'
 
 function App() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [allData, setAllData] = useState([]);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (name.trim() && email.trim()) {
-      setAllData([...allData, { name, email }]);
-      setName(''); // Clear form after submit
-      setEmail('');
-    }
-  };
-  function removePerson(id) {
-    let copuser=[...allData]
-    copuser.splice(id,1)
-    setAllData(copuser)
-  }
-
   return (
-    <div className='main h-screen w-screen bg-gray-700 flex items-center justify-center p-8 gap-6'>
-      {/* Pass state and setters as props for Two-Way Binding */}
-      <Left 
-        name={name} 
-        setName={setName} 
-        email={email} 
-        setEmail={setEmail} 
-        handleFormSubmit={handleSubmit}
-      />
-      <Right
-        removePerson={removePerson}
-       data={allData}/>
+    <div className='bg-gray-600 h-screen w-screen'>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path="dash" element={<Dashboar/>}>
+            <Route path="profile" element={<Ele/>}/>
+        </Route>
+      </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
