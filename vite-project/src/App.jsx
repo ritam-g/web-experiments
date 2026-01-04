@@ -8,12 +8,12 @@ import Ele from './components/Ele'
 
 function App() {
   return (
-    <div className='bg-gray-600 h-screen w-screen'>
+    <div className='bg-gray-600 h-screen w-screen overflow-x-hidden'>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
-        <Route path="dash" element={<Dashboar/>}>
+        <Route path="/dash" element={<Dashboar/>}>
             <Route path="profile" element={<Ele/>}/>
         </Route>
       </Routes>
