@@ -7,3 +7,6 @@
 .animate-fadeIn {
   animation: fadeIn 0.8s ease-out;
 }
+html{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
