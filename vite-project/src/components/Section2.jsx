@@ -1,18 +1,13 @@
 import AboutAstratto from "./AboutAstratto";
+import SectionTop from "./SectionTop";
 
 function Section2() {
   return (
     <div className="parent border-sky-200 border-2 p-3 
     lg:flex  flex-col
     ">
-    <div className="first w-full 
-    lg:h-[10rem]  flex items-center justify-between p-10
-    ">
-        <h1 className="text-5xl font-bold">Our Services</h1>
-        <h1 className="">Discover a wide range of opportunities through <br />
-a comprehensive range of qualified services.</h1>
-
-    </div>
+    <SectionTop first="Our Services" snd="Discover a wide range of opportunities through
+a comprehensive range of qualified services."/>
 
     <div className="middle w-full  flex justify-evenly ">
     <div className="max-w-sm rounded-2xl border-2 border-violet-600 p-6 bg-[#fbf7f3]

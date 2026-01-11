@@ -6,7 +6,7 @@ function Navbar() {
      className
      ='
      Navbar
-     lg:h-[5rem] w-full border-b-1 flex items-center justify-between  capitalize text-xl rounded-2xl
+     lg:h-[5rem] w-full border-b-1 flex items-center justify-between  capitalize text-xl rounded-2xl pb-2
      '
      >
         <div className="left flex gap-2">
@@ -18,9 +18,10 @@ function Navbar() {
             <img className='scale-100 h-full object-cover w-[5rem]   ' src="/images/o-logo.png" alt="" />
             <h1>Astratto</h1>
         </div>
-        <div className="right flex gap-2">
+        <div className="right flex items-center gap-[3rem]">
             <h1>Carreers</h1>
-            <button className=' border-2'>Contact us</button>
+
+            <button className='border-purple-500 border-2 p-1 rounded-4xl'><a href="https://www.linkedin.com/in/ritammaty/">Contact us</a>  <i className="ri-arrow-right-up-line text-[2rem]"></i></button>
         </div>
       
     </div>

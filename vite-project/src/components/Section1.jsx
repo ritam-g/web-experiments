@@ -21,7 +21,7 @@ function Section1() {
                  <img className=' lg:object-cover h-[5rem]
             ' src="/images/p-logo.png" alt="" /> 
              with Our</h1>
-            <h1>Magico Design</h1>
+            <h1 className=' flex justify-center'><h1 className='bg-yellow-300 p-1 translate-z-[1rem] '>Magico</h1> Design</h1>
             </div>
             
         </div>
