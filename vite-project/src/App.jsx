@@ -1,23 +1,32 @@
 import React from 'react'
-import Header from './components/Header'
-import Section from './components/Section'
-import Footer from './components/Footer'
-
+import axios from 'axios'
+import { useEffect } from 'react'
+import { useState } from 'react'
 function App() {
+  const [users, setusers] = useState([])
+  useEffect(() => {
+    async function call() {
+    let res=await axios.get('http://localhost:3000/api/user')
+    const {users}=res.data
+    setusers(users)
+  }
+  call()
+  }, [])
+  
+  
+  
   return (
     <>
-      <main className=' min-h-screen
-    w-full
-    grid grid-rows-[auto_1fr_auto]
-    gap-1
-    px-4 py-4
-    md:px-12
-    lg:px-56
-        ' >
-        <Header/>
-        <Section/>
-        <Footer/>
-
+      <main className='h-screen w-screen bg-gray-600'>
+      {
+        users.map((user,id)=>{
+         return <h1>
+              <p>{user.userName}</p>
+                <p>{user.age}</p>
+         </h1>
+         
+        })
+      }
       </main>
     </>
   )
